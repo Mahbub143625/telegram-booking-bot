@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: telegram-booking-bot
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python bot.py"
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: ADMIN_GROUP_ID
+        sync: false
+      - key: TZ
+        sync: false
+      - key: BOOKING_DAYS_AHEAD
+        sync: false
+      - key: HOLD_MINUTES
+        sync: false
+      - key: DB_PATH
+        sync: false

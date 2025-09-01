@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Local data / secrets
+.env
+booking.db
+
+# OS/editor
+.DS_Store
+*.log
