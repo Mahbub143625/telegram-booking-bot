@@ -1,0 +1,13 @@
+app = "telegram-booking-bot"
+primary_region = "sin"
+
+[env]
+TZ = "Asia/Dhaka"
+DB_PATH = "/data/booking.db"
+
+[[mounts]]
+source = "data"
+destination = "/data"
+
+[processes]
+app = "python bot.py"
